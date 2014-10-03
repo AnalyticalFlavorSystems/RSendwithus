@@ -52,7 +52,7 @@ sendwithus_send <- function(api_key, template_id, variables, recipient, sender, 
                             cc=NULL, bcc=NULL, tags=NULL, inline=NULL, files=NULL) {
   sendData <- list(email_id=template_id, sender=sender, 
                    recipient=recipient, email_data=variables, esp_account=esp,
-                   files=files, inline=inline,tags=tags,
+                   files=files, inline=inline,tags=data.frame(tags),
                    cc=data.frame(address=cc), bcc=data.frame(address=bcc))
   link <- "https://api.sendwithus.com/api/v1/send"
   jsonData <- toJSON(sendData, auto_unbox=TRUE, pretty=TRUE)
