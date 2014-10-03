@@ -1,7 +1,8 @@
 #' RSendwithus.
 #'
 #' @name RSendwithus
-#' @import jsonlite
+#' @import RCurl
 #' @import httr
+#' @import jsonlite
 #' @docType package
 NULL

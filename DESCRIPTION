@@ -3,7 +3,8 @@ Title: This package is an api wrapper for R to use sendwithus
 Version: 0.1
 Author: Evan Farrell <evandev@gastrograph.com>
 Maintainer: Evan Farrell <evandev@gastrograph.com>
-Description: This package is an api wrapper that sends emails using the sendwithus platform
+Description: This package is an api wrapper that sends emails using the
+    sendwithus platform
 Depends:
     R (>= 3.1.0)
 Imports:

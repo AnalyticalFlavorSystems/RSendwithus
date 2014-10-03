@@ -2,3 +2,6 @@
 
 export(sendwithus_list_templates)
 export(sendwithus_send)
+import(RCurl)
+import(httr)
+import(jsonlite)
