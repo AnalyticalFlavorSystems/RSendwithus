@@ -56,7 +56,6 @@ sendwithus_send <- function(api_key, template_id, variables, recipient, sender, 
                    cc=data.frame(address=cc), bcc=data.frame(address=bcc))
   link <- "https://api.sendwithus.com/api/v1/send"
   jsonData <- toJSON(sendData, auto_unbox=TRUE, pretty=TRUE)
-  print(jsonData)
   .post(api_key, link, jsonData)
 }
 
